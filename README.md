@@ -55,7 +55,8 @@ Built using **Spring Boot, MySQL, HTML, CSS, and JavaScript**.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/bhanuchandanisetti-lgtm/Employee-Task-Management.git cd Employee-Task-Management
+git clone https://github.com/bhanuchandanisetti-lgtm/Employee-Task-Management.git
+cd Employee-Task-Management
 ```
 * * *
 
