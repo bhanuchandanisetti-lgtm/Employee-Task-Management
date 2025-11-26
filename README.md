@@ -121,3 +121,10 @@ From there, navigate through:
 *   View Employees
     
 *   View Tasks
+
+| Page               | Purpose                                                        |
+| ------------------ | -------------------------------------------------------------- |
+| **Add Employee**   | Register a new employee with basic details                     |
+| **Assign Task**    | Select a department → choose an employee → assign a task       |
+| **View Employees** | View all employees, their tasks, and manage them (edit/delete) |
+| **View Tasks**     | View tasks grouped by department and sort them by status       |
