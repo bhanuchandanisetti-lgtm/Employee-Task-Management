@@ -12,7 +12,7 @@ Built using **Spring Boot, MySQL, HTML, CSS, and JavaScript**.
 ✔️ Edit and delete assigned tasks  
 ✔️ Search employees by name, email, department, or role  
 ✔️ Filter employees by department  
-✔️ View tasks by department and sort by status  
+✔️ View tasks and their status sorted by department 
 ✔️ Clean and user-friendly UI  
 
 ---
@@ -119,15 +119,62 @@ Open the main page:
 `src/main/resources/static/index.html`
 
 Right-click → **Open in browser**  
-From there, navigate through:
 
-*   Add Employee
+### 🔹 Home Page
+Users can choose any of the primary actions:
+- Add Employee  
+- View Employees & Tasks  
+- Assign Task  
+- View Task Status
+
+<img src="screenshots/home_page.png" width="65%">
+
+From there, navigate through:
+### 🔹 Add Employee
+From the **Home Page**, click **"Add Employee"**:
+
+- Enter **Name**, **Email**, **Department**, and **Role**
+- Click **"Add Employee"** to save
+- The new employee will appear in:
+  - **View Employees & Tasks**
+  - **Assign Task**  (under their department)
+
+<img src="screenshots/add_employee.png" width="65%">
+
+### 🔹 View Employees
+Displays all employees, their details, and assigned tasks.  
+Supports:
+- Sorting/filtering by department  
+- Searching by name, email, role, or department  
+- Editing/deleting tasks  
+- Deleting employees   
+
+<img src="screenshots/view_employee.png" width="65%">
+
+### 🔹 Assign Task
+1️⃣ **Click "Assign Task"** on the Home Page 
+
+2️⃣ **Select a Department** from the department list 
+
+<img src="screenshots/task_dept.png" width="65%">
+
+3️⃣ **Choose an Employee** within that department
+
+<img src="screenshots/task_emplo.png" width="65%">
+
+4️⃣ **Fill task details** (Title, Description, Status) 
+
+<img src="screenshots/assign_task.png" width="65%">
+
+5️⃣ **Assign the task** to store it in the system
     
-*   Assign Task
-    
-*   View Employees
-    
-*   View Tasks
+### 🔹 View Task Status
+Shows tasks grouped by departments with color-coded statuses:
+- 🟥 Pending  
+- 🟨 In-progress  
+- 🟩 Completed
+
+<img src="screenshots/task_status.png" width="65%">
 
 | Page               | Purpose                                                        |
 | ------------------ | -------------------------------------------------------------- |
@@ -135,3 +182,11 @@ From there, navigate through:
 | **Assign Task**    | Select a department → choose an employee → assign a task       |
 | **View Employees** | View all employees, their tasks, and manage them (edit/delete) |
 | **View Tasks**     | View tasks and their status grouped by department              |
+
+---
+
+## 📝 Conclusion
+
+This project successfully demonstrates the integration of a Spring Boot backend with a clean JavaScript-based frontend to manage employees and tasks efficiently. It delivers essential features such as employee registration, task assignment, and status tracking, making it suitable for organizational task management workflows. Future enhancements can include authentication, user roles, and analytics dashboards.
+
+
