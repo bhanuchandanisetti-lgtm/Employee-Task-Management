@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assign Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initAssignTaskPage()">
+<h2>Assign Task to Employee</h2>
+
+<div id="message"></div>
+
+<div id="selectedEmpInfo" class="card">
+    <!-- employee info loaded by JS -->
+</div>
+
+<form id="taskForm" class="form-container" onsubmit="assignTaskToSelected(event)">
+    <input id="taskTitle" placeholder="Task Title" required>
+    <input id="taskDesc" placeholder="Task Description" required>
+    <input id="taskStatus" placeholder="Status (Pending / In-progress / Completed)" required>
+
+    <button type="submit">Assign Task</button>
+</form>
+
+<a href="task-departments.html" class="back-link">⬅ Back to Departments</a>
+<script src="script.js"></script>
+</body>
+</html>

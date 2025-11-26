@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Tasks by Department</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadTasksByDept()">
+
+<h2>Tasks Sorted by Department</h2>
+
+<div id="message"></div>
+
+<select id="deptFilter" onchange="filterTasksByDept()">
+    <option value="ALL">All Departments</option>
+</select>
+
+<table id="tasksTable">
+    <thead>
+    <tr>
+        <th>Department</th>
+        <th>Employee</th>
+        <th>Task</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody id="tasksTableBody"></tbody>
+</table>
+
+<a href="index.html" class="back-link">⬅ Back to Home</a>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Add Employee</h2>
+
+<div id="message"></div>
+
+<form class="form-container" onsubmit="addEmployee(event)">
+    <input id="empName" placeholder="Name" required>
+    <input id="empEmail" placeholder="Email" type="email" required>
+    <input id="empDept" placeholder="Department" required>
+    <input id="empRole" placeholder="Role" required>
+
+    <button type="submit">Add Employee</button>
+</form>
+
+<a href="index.html" class="back-link">⬅ Back to Home</a>
+
+<script src="script.js"></script>
+</body>
+</html>

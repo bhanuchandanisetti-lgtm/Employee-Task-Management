@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Employees & Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadEmployeesAndTasks()">
+<h2>All Employees & Their Tasks</h2>
+
+<div id="message"></div>
+
+<select id="deptFilter" onchange="filterEmployeesByDept()">
+    <option value="ALL">All Departments</option>
+</select>
+<div class="toolbar">
+    <button onclick="loadEmployeesAndTasks()">🔄 Refresh</button>
+    <input id="employeeSearch" placeholder="Search by name, email, dept, role" onkeyup="filterEmployeesTable()">
+</div>
+
+<table id="employeeTable">
+    <thead>
+    <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+        <th>Role</th>
+        <th>Tasks</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="employeeTableBody"></tbody>
+</table>
+
+<a href="index.html" class="back-link">⬅ Back to Home</a>
+
+<script src="script.js"></script>
+</body>
+</html>

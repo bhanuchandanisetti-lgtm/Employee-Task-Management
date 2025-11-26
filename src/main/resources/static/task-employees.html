@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Employee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadEmployeesForDepartment()">
+<h2>Select Employee to Assign Task</h2>
+
+<div id="message"></div>
+
+<p id="deptTitle"></p>
+
+<input id="deptEmpSearch" placeholder="Search employees in this department"
+       onkeyup="filterDeptEmployees()">
+
+<table id="deptEmpTable">
+    <thead>
+    <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="deptEmpTableBody"></tbody>
+</table>
+
+<a href="task-departments.html" class="back-link">⬅ Back to Departments</a>
+<script src="script.js"></script>
+</body>
+</html>

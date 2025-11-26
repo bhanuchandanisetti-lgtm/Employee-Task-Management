@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Department</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .dept-list {
+            margin-top: 20px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .dept-list li {
+            padding: 12px;
+            margin-bottom: 10px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        .dept-list li:hover {
+            background: #d7d7d7;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body onload="loadDepartments()">
+
+<h2>Select a Department</h2>
+
+<div id="message"></div>
+
+<input type="text" id="deptSearch" placeholder="Search department..." onkeyup="filterDepartments()">
+<ul id="deptList" class="dept-list"></ul>
+
+<a href="index.html" class="back-link">⬅ Back to Home</a>
+
+<script src="script.js"></script>
+</body>
+</html>
