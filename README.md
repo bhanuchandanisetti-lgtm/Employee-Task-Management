@@ -30,19 +30,20 @@ cd employee-task-management
 2️⃣ Configure MySQL Database
 
 Create a database:
-
+```bash
 CREATE DATABASE employe_task_management;
 
 
 Update src/main/resources/application.properties with your MySQL credentials:
-
+```bash
 spring.datasource.url=jdbc:mysql://localhost:3306/employe_task_management
 spring.datasource.username=root
 spring.datasource.password=YOUR_PASSWORD
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-3️⃣ Run the Application
+### 3️⃣ Run the Application
+```bash
 mvn spring-boot:run
 
 
@@ -50,6 +51,6 @@ Backend starts on:
 
 http://localhost:8080/
 
-4️⃣ Access Frontend
+###4️⃣ Access Frontend
 
 Open index.html (located in /src/main/resources/static) in any browser.
