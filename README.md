@@ -79,15 +79,6 @@ cd Employee-Task-Management
 ```
 * * *
 
-### 🖥️ Running the Project in IntelliJ IDEA
-
-1. Open IntelliJ → **File > Open** → Select this project folder
-2. Wait for Maven dependencies to download automatically
-3. Open `EmployeeTaskManagementApplication.java`
-4. Right-click → **Run**
-5. Access the frontend via `src/main/resources/static/index.html`
-
-
 ### 2️⃣ Configure MySQL Database
 
 Create a database:
@@ -96,18 +87,25 @@ CREATE DATABASE employe_task_management;
 ```
 Update `src/main/resources/application.properties` with your MySQL credentials:
 ```bash
+spring.application.name=employe_task_management
 spring.datasource.url=jdbc:mysql://localhost:3306/employe_task_management
 spring.datasource.username=YOUR_USERNAME
 spring.datasource.password=YOUR_PASSWORD
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ```
 * * *
 
-### 3️⃣ Run the Application
-```bash
-mvn spring-boot:run
-```
+### 3️⃣ Running the Project in IntelliJ IDEA
+
+1. Open IntelliJ → **File > Open** → Select this project folder
+2. Wait for Maven dependencies to download automatically
+3. Open `EmployeeTaskManagementApplication.java`
+4. Right-click → **Run**
+5. Access the frontend via `src/main/resources/static/index.html`
+
+
 Backend starts at:
 ```text
 http://localhost:8080/
