@@ -63,7 +63,7 @@ Built using **Spring Boot, MySQL, HTML, CSS, and JavaScript**.
            │     ├── view-tasks.html
            │     ├── script.js
            │     └── style.css
-           ├── templates  (unused)
+           ├── templates
            └── application.properties
 
 ```
