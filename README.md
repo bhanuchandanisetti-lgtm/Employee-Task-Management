@@ -35,17 +35,36 @@ Built using **Spring Boot, MySQL, HTML, CSS, and JavaScript**.
 
 ```text
 /src
-  └── main
-      ├── java/com.employee.taskmanagement
-      │     ├── controller
-      │     ├── model
-      │     ├── repository
-      │     ├── service
-      │     └── EmployeTaskManagementApplication.java
+ └── main
+      ├── java
+      │    └── com
+      │         └── employeetaskmanagement
+      │               ├── controller
+      │               │     ├── EmployeeController.java
+      │               │     └── TaskController.java
+      │               ├── model
+      │               │     ├── Employee.java
+      │               │     └── Task.java
+      │               ├── repository
+      │               │     ├── EmployeeRepository.java
+      │               │     └── TaskRepository.java
+      │               ├── service
+      │               │     ├── EmployeeService.java
+      │               │     └── TaskService.java
+      │               └── EmployeeTaskManagementApplication.java
       └── resources
-            ├── static (Frontend HTML/CSS/JS files)
-            ├── templates (not used)
-            └── application.properties
+           ├── static
+           │     ├── index.html
+           │     ├── add-employee.html
+           │     ├── view-employees.html
+           │     ├── task-departments.html
+           │     ├── task-employees.html
+           │     ├── assign-task.html
+           │     ├── view-tasks.html
+           │     ├── script.js
+           │     └── style.css
+           ├── templates  (unused)
+           └── application.properties
 
 ```
 ---
