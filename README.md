@@ -79,6 +79,15 @@ cd Employee-Task-Management
 ```
 * * *
 
+### 🖥️ Running the Project in IntelliJ IDEA
+
+1. Open IntelliJ → **File > Open** → Select this project folder
+2. Wait for Maven dependencies to download automatically
+3. Open `EmployeeTaskManagementApplication.java`
+4. Right-click → **Run**
+5. Access the frontend via `src/main/resources/static/index.html`
+
+
 ### 2️⃣ Configure MySQL Database
 
 Create a database:
